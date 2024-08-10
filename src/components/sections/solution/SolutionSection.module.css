@@ -1,0 +1,39 @@
+/* SolutionSection.module.css */
+.solutionContainer h1 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.solutionContainer h1 span {
+  color: var(--primary-color);
+}
+
+.solutionContainer .solutionCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .solutionContainer h1 {
+    font-size: var(--font-size-xl) !important;
+  }
+
+  .solutionContainer .solutionCardsContainer {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+@media (max-width:768px) {
+  .solutionContainer h1 {
+    font-size: var(--font-size-lg);
+  }
+
+  .solutionContainer .solutionCardsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+

@@ -1,0 +1,6 @@
+/* Experience.module.css */
+
+.experienceContainer .experienceHeader {
+  font-size: var(--font-size-xl);
+  text-align: center;
+}

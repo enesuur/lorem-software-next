@@ -1,0 +1,162 @@
+/* Footer.module.css */
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border-top: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+}
+
+.footerContainer nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 72px 0 72px 0;
+}
+
+.footerContainer nav .logoContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.footerContainer nav .logoContainer .logoText h2 {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+}
+
+.footerContainer nav .logoContainer .logoText p {
+  font-size: var(--font-size-base);
+  max-width: 400px;
+  color: var(--gray);
+}
+
+.footerContainer nav .servicesContainer,
+.footerContainer nav .siteNavigationContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  color: var(--gray);
+}
+
+.footerContainer nav .servicesContainer li:hover,
+.footerContainer nav .siteNavigationContainer li:hover,
+.footerContainer nav .contactContainer li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-underline-offset: 4px;
+}
+
+.footerContainer nav .servicesContainer li:first-child,
+.footerContainer nav .siteNavigationContainer li:first-child,
+.footerContainer nav .contactContainer .primaryContact li:first-child {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--primary-font-color);
+  text-decoration: none;
+  cursor: text;
+}
+
+.footerContainer nav .contactContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.footerContainer nav .contactContainer .primaryContact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  color: var(--gray);
+}
+
+.footerContainer nav .contactContainer .primaryContact .location {
+  max-width: 200px;
+  cursor: text;
+  text-decoration: none;
+}
+
+.footerContainer nav .contactContainer .socialsContact {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-lg);
+  gap: 16px;
+}
+
+.footerContainer nav .contactContainer .primaryContact .contactFlexBox {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .footerContainer nav .logoContainer h2 {
+    font-size: var(--font-size-base);
+  }
+
+  .footerContainer nav .logoContainer .logoText p {
+    font-size: var(--font-size-sm);
+    max-width: 200px;
+  }
+
+  .footerContainer nav .servicesContainer,
+  .footerContainer nav .siteNavigationContainer,
+  .footerContainer nav .contactContainer {
+    font-size: var(--font-size-sm);
+  }
+
+  .footerContainer nav .contactContainer .primaryContact .location {
+    max-width: 150px;
+  }
+
+  .footerContainer nav .contactContainer .socialsContact {
+    margin-top: 16px;
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+  }
+
+  .footerContainer nav .logoContainer {
+    row-gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerContainer nav .logoContainer h2 {
+    text-align: center;
+  }
+
+  .footerContainer nav .logoContainer .logoText p {
+    font-size: var(--font-size-base);
+    text-align: center;
+  }
+
+  .footerContainer nav .servicesContainer,
+  .footerContainer nav .siteNavigationContainer,
+  .footerContainer nav .contactContainer {
+    align-items: center;
+    font-size: var(--font-size-base);
+  }
+
+  .footerContainer nav .contactContainer .primaryContact {
+    align-items: center;
+  }
+
+  .footerContainer nav .contactContainer .primaryContact .location {
+    text-align: center;
+    max-width: 100%;
+    cursor: text;
+    text-decoration: none;
+  }
+
+  .footerContainer nav .contactContainer .socialsContact {
+    margin-top: 16px;
+    font-size: var(--font-size-lg);
+  }
+}

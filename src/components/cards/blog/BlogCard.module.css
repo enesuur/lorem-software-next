@@ -1,0 +1,46 @@
+/* BlogCard.module.css */
+
+.blogCardContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 400px;
+}
+
+.blogCardContainer figure {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  flex-basis: 70%;
+  position: relative;
+}
+
+.blogCardContainer figure img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blogCardContainer article {
+  flex-basis: 30%;
+  padding: 12px;
+}
+
+.blogCardContainer article .blogCardInfo {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4px;
+  margin-bottom: 4px;
+  color: var(--gray);
+}
+.blogCardContainer article .blogCardInfo span {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.blogCardContainer article h2 {
+  font-size: var(--font-size-md);
+}

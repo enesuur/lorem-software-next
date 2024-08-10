@@ -1,0 +1,18 @@
+.backgroundContainer {
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+
+.backgroundTextHeader span {
+  color: var(--primary-color);
+}
+
+.brandsContainer {
+  margin-top: 128px;
+}
+
+@media (max-width: 768px) {
+  .backgroundTextHeader {
+    font-size: var(--font-size-lg);
+  }
+}

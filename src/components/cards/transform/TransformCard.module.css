@@ -1,0 +1,26 @@
+/* TransformCard.module.css */
+
+.transformCardContainer {
+  border-radius: 1px solid var(--border-color);
+}
+
+.transformCardContainer .cardHeader {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  column-gap: 8px;
+  font-size: var(--font-size-md);
+}
+
+.transformCardContainer .cardHeader span {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: var(--font-size-md);
+}
+
+.transformCardContainer article {
+  margin-top: 16px;
+  color: var(--gray);
+  font-size: var(--font-size-base);
+}

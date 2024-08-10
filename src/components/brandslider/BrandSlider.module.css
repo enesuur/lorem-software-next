@@ -1,0 +1,7 @@
+/* BrandSlider.module.css */
+
+.main div > * {
+    margin: 0 32px;
+    height: 40px ;
+    filter: grayscale(1);
+}

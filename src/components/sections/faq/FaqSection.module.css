@@ -1,0 +1,29 @@
+/* FaqSection.module.css */
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.faqContainer .faqTextHeader {
+  font-size: var(--font-size-xl);
+}
+
+.faqContainer .faqTextHeader span{
+  color: var(--primary-color);
+}
+
+.faqContainer .faqTextSubHeader {
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .faqContainer .faqTextHeader {
+    font-size: var(--font-size-lg);
+  }
+
+  .faqContainer .faqTextSubHeader {
+    font-size: var(--font-size-base);
+  }
+}

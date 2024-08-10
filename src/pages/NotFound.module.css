@@ -1,0 +1,22 @@
+/* NotFound.module.css */
+
+.notFoundContainer {
+  border: 1px solid var(--border-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.notFoundContainer h1 {
+  font-size: var(--font-size-xl);
+}
+
+.notFoundContainer p {
+  font-size: var(--font-size-md);
+}
+
+.notFoundContainer a {
+  margin: 32px 0;
+}

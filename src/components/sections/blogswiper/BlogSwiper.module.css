@@ -1,0 +1,12 @@
+/* BlogSwiper.module.css */
+
+.blogSwiperContainer .blogSwiperTextHeader {
+  font-size: var(--font-size-xl);
+  margin: 12px 0;
+}
+
+@media (max-width: 768px) {
+  .blogSwiperContainer .blogSwiperTextHeader {
+    font-size: var(--font-size-lg);
+  }
+}

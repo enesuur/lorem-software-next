@@ -1,0 +1,79 @@
+/* BlogArticle.module.css */
+
+.blogArticleSection {
+  margin: 0 !important;
+}
+
+.blogArticleContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.blogArticleContainer figure {
+  position: relative;
+  height: 512px;
+  border-radius: 4px;
+}
+
+.blogArticleContainer figure img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.blogArticleContainer article .articleTextHeader {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.blogArticleContainer article .articleSubTextHeader {
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  margin: 16px 0;
+}
+
+.blogArticleContainer article .articleInfo {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-bottom: 4px;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+}
+.blogArticleContainer article .articleInfo span {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.blogArticleContainer .p {
+  color: var(--paragraph-font-color);
+  margin: 4px;
+}
+
+.progressContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--background-color);
+  z-index: 9999;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.25s;
+}
+
+
+
+@media (max-width:768px) {
+  .blogArticleContainer figure {
+    height: 512px;
+    border-radius: 4px;
+  }
+}

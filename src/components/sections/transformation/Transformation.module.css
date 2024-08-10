@@ -1,0 +1,60 @@
+/* Transformation.module.css */
+
+.transformationTextHeader {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin: 72px 0;
+  max-width: 768px;
+  margin: auto;
+}
+
+.transformationTextHeader span{
+  color: var(--primary-color);
+}
+
+.transformBox {
+  display: flex;
+  gap: 32px;
+}
+
+.transformBox .transformFeatures {
+  flex-basis: 50%;
+  row-gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transformBox figure {
+  position: relative;
+  display: block;
+  flex-basis: 50%;
+  border-radius: 4px;
+}
+
+.transformBox figure img {
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+  .transformationTextHeader {
+    font-size: var(--font-size-xl) !important;
+    margin-top: 256px;
+  }
+}
+
+@media (max-width: 992px) {
+  .transformationTextHeader {
+    font-size: var(--font-size-lg);
+    margin-bottom: 64px;
+
+  }
+  .transformBox .transformFeatures {
+    flex-basis: 100%;
+  }
+
+  .transformBox figure {
+    display: none;
+  }
+}

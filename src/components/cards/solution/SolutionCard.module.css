@@ -1,0 +1,58 @@
+/* SolutionCard.module.css */
+
+.solutionCardContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 24px 32px;
+  row-gap: 32px;
+  background-color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.solutionCardContainer:hover {
+  transform: translateY(-10px);
+}
+
+.solutionCardContainer span {
+  font-size: var(--font-size-xl);
+}
+
+.solutionCardContainer h2 {
+  font-weight: 500;
+  font-size: var(--font-size-lg);
+}
+
+.solutionCardContainer p {
+  color: var(--paragraph-font-color);
+}
+
+.solutionCardContainer a {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+  color: var(--gray);
+  margin-top: auto;
+}
+
+.solutionCardContainer a svg {
+  font-size: var(--font-size-md);
+  transition: margin-left 0.5 ease-in;
+}
+
+.solutionCardContainer a:hover {
+  color: var(--button-hover-color);
+}
+
+.solutionCardContainer a:hover svg {
+  margin-left: 4px;
+}
+
+@media (max-width:768px) {
+  .solutionCardContainer h2 {
+    font-size: var(--font-size-md);
+  }
+}
+
+

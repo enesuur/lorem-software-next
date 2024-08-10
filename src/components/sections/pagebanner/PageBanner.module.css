@@ -1,0 +1,12 @@
+/* PageBanner.css */
+
+.pageBannerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageBannerContainer h1 {
+    font-size: var(--font-size-xl);
+}

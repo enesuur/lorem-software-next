@@ -1,0 +1,50 @@
+/* CLientCard.module.css */
+
+.clientCardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.cardHeader figure {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+  position: relative;
+}
+
+.cardHeader figure img{
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.clientInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.clientInfo span:first-child {
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.clientInfo span:last-child {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.clientCardContainer article {
+  color: var(--gray);
+  font-weight: 400  ;
+}

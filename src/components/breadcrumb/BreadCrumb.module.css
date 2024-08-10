@@ -1,0 +1,26 @@
+/* BreadCrumb.module.css */
+.breadCrumbContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--gray);
+  }
+
+  .breadCrumbContainer ol {
+    display: flex;
+    align-items: center;
+  }
+  .breadCrumbContainer ol li:after {
+    content: '/';
+    color: var(--primary-color);
+  }
+  
+  .breadCrumbContainer ol li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb .active span {
+    font-weight: 500;
+  }
+  
+  

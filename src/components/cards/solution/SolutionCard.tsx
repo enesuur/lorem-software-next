@@ -1,5 +1,4 @@
 import { TiArrowRight } from "react-icons/ti";
-
 import React from "react";
 import styles from "./SolutionCard.module.css";
 import Link from "next/link";

@@ -3,7 +3,7 @@
 .servicesContainer {
   display: flex;
   flex-direction: column;
-  row-gap: 108px;
+  row-gap: 144px;
 }
 
 .serviceItem:nth-child(2n) {
@@ -23,16 +23,18 @@
 }
 
 .serviceItem article h2 {
-  font-size: var(--font-size-md);
-  font-weight: 500;
+  font-size: var(--font-size-lg);
+  font-weight: 400;
 }
 
 .serviceItem article p {
-  margin-top: 16px;
+  font-size: var(--font-size-md);
   color: var(--gray);
+  margin-top: 16px;
 }
 
 .serviceItem figure {
+  border-radius: 8px;
   flex-basis: 50%;
   display: block;
   position: relative;
@@ -43,11 +45,13 @@
 .serviceItem figure img {
   object-fit: cover;
   object-position: center;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .serviceItem {
     flex-direction: column-reverse;
+    row-gap: 4px;
     height: auto;
   }
 

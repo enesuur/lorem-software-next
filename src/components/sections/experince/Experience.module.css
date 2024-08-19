@@ -2,5 +2,13 @@
 
 .experienceContainer .experienceHeader {
   font-size: var(--font-size-xl);
+  margin-bottom: 24px;
   text-align: center;
+}
+
+@media (max-width:768px) {
+  .experienceContainer .experienceHeader {
+    font-size: var(--font-size-lg);
+    margin-bottom: 12px;
+  }
 }

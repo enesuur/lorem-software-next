@@ -1,0 +1,24 @@
+[
+    {
+      "imageSrc": "/img/client1.jpg",
+      "altText": "Client One",
+      "clientCompany": "Company One",
+      "clientTitle": "CEO",
+      "articleContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "imageSrc": "/img/client2.jpg",
+      "altText": "Client Two",
+      "clientCompany": "Company Two",
+      "clientTitle": "CTO",
+      "articleContent": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "imageSrc": "/img/client3.jpg",
+      "altText": "Client Three",
+      "clientCompany": "Company Three",
+      "clientTitle": "CTO",
+      "articleContent": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
+  

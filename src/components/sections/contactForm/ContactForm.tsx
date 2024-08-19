@@ -1,4 +1,4 @@
-import ContactFormImage from "@/assets/images/contactImage.png";
+import { ContactFormImage } from "@/utils/index";
 import React, { useState } from "react";
 import Image from "next/image";
 import Swal from "sweetalert2";
@@ -73,14 +73,14 @@ const ContactForm: React.FC = () => {
     if (isValid) {
       console.log(formData);
       Swal.fire({
-        title: 'Success!',
+        title: "Success!",
         html: '<p class="custom-swal-text">Your message has been sent successfully.</p>',
-        icon: 'success',
-        confirmButtonText: 'Confirm',
+        icon: "success",
+        confirmButtonText: "Confirm",
         customClass: {
-          title: 'custom-swal-title',
-          confirmButton: 'custom-swal-confirm-button'
-        }
+          title: "custom-swal-title",
+          confirmButton: "custom-swal-confirm-button",
+        },
       });
       setFormData({
         name: "",
@@ -92,14 +92,14 @@ const ContactForm: React.FC = () => {
     } else {
       setErrors(newErrors);
       Swal.fire({
-        title: 'Error!',
+        title: "Error!",
         html: '<p class="custom-swal-text">Please fill in all the required fields correctly.</p>',
-        icon: 'error',
-        confirmButtonText: 'OK',
+        icon: "error",
+        confirmButtonText: "OK",
         customClass: {
-          title: 'custom-swal-title',
-          confirmButton: 'custom-swal-confirm-button'
-        }
+          title: "custom-swal-title",
+          confirmButton: "custom-swal-confirm-button",
+        },
       });
     }
   };
@@ -184,7 +184,7 @@ const ContactForm: React.FC = () => {
         </form>
 
         <figure>
-          <Image src={ContactFormImage} alt="Contact Form Image" fill={true} />
+          <Image src={ContactFormImage} alt="Contact Form Image" fill={true} priority={true} />
         </figure>
       </div>
     </section>

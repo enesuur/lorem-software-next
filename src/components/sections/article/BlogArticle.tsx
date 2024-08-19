@@ -1,13 +1,18 @@
 import { IoTimeOutline } from "react-icons/io5";
 import { CiCalendarDate } from "react-icons/ci";
+import { RootState } from "@/store/store";
+import { useSelector } from "react-redux";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import BlogArticleImage from "@/assets/images/softwareHero.jpg";
+import {HeroImage} from "@/utils/index";;
 import styles from "./BlogArticle.module.css";
 
 const BlogArticle = () => {
   const [progress, setProgress] = useState(0);
   const articleRef = useRef(null);
+
+  const { title, img,readTime,date } = useSelector((state: RootState) => state.blog);
+
 
   useEffect(() => {
     const calculatePercentage = () => {
@@ -34,18 +39,18 @@ const BlogArticle = () => {
           />
         </div>
         <figure className={styles.figure}>
-          <Image src={BlogArticleImage} alt="SaaS Solutions" fill={true} />
+          <Image src={img} alt="SaaS Solutions" fill={true} />
         </figure>
 
         <article ref={articleRef} className={styles.article}>
         <div className={styles.articleInfo}>
             <span>
               <IoTimeOutline />
-              {5} min read
+              {readTime} mins
             </span>
             <span>
               <CiCalendarDate />
-              08.08.2024
+              {date}
             </span>
           </div>
           <h1 className={styles.articleTextHeader}>

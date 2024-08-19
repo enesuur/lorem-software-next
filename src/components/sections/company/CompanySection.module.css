@@ -1,0 +1,59 @@
+/* CompanySection.module.css */
+
+.companyContainer {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.companyContainer article {
+    flex-basis: 50%;
+}
+
+.companyContainer article h2{
+    font-size: var(--font-size-xl);
+    margin-bottom: 8px;
+}
+
+.companyContainer article p{
+    font-size: var(--font-size-md);
+    color: var(--gray);
+}
+
+.companyContainer figure {
+    flex-basis: 50%;
+    position: relative;
+    height: 512px;
+    border-radius: 8px;
+}
+
+.companyContainer figure img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+    .companyContainer article{
+        flex-basis: 100%;
+    }
+    .companyContainer figure{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .companyContainer{
+        flex-direction: column-reverse;
+    }
+
+    .companyContainer article{
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .companyContainer article h2{
+        font-size: var(--font-size-lg);
+    }
+}

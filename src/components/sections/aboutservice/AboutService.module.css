@@ -1,0 +1,84 @@
+/* AboutService.module.css */
+
+.aboutServiceSection {
+  margin-top: 144px !important;
+}
+
+.aboutServiceContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.aboutServiceContainer h2 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+
+.aboutServiceContainer h4 {
+  font-size: var(--font-size-lg);
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.aboutServiceContainer .servicesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.aboutServiceContainer .servicesContainer figure {
+  height: 512px;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.aboutServiceContainer .servicesContainer figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.aboutServiceContainer .servicesContainer figure:hover::before {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.aboutServiceContainer .servicesContainer figure img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.aboutServiceContainer .servicesContainer figure figcaption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: var(--white);
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 768px) {
+  .aboutServiceContainer h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  .aboutServiceContainer h4 {
+    font-size: var(--font-size-md);
+  }
+
+  .aboutServiceContainer .servicesContainer {
+    grid-template-columns: 1fr;
+  }
+}

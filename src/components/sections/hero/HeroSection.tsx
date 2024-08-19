@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HeroImage from "@/assets/images/softwareHero.jpg";
+import { HeroImage } from "@/utils/index";
 import styles from "./HeroSection.module.css";
 const HeroSection: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
           <button className="btn-primary">Get Started</button>
         </article>
         <figure>
-          <Image src={HeroImage} alt="Hero Image" fill={true}></Image>
+          <Image src={HeroImage} alt="Hero Image" fill={true} priority={true} />
         </figure>
       </div>
     </section>

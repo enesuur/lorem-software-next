@@ -2,9 +2,8 @@ import React from "react";
 import styles from "./ClientCard.module.css";
 import Image, { StaticImageData } from "next/image";
 
-
 interface ClientCardProps {
-  imageSrc: StaticImageData;
+  imageSrc: string | StaticImageData;
   altText: string;
   clientCompany: string;
   clientTitle: string;

@@ -4,7 +4,7 @@ This project features a professional software company website named Lorem Softwa
 
 ## Screenshots
 
-![Home Page Of the Application](loremSoftware-1.png)
+![Home Page Of the Application](https://hizliresim.com/khq9bqg)
 
 ## Demo
 Link will be added.
